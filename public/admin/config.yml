@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "/src/assets"
+publick_folder: "/assets"
+
+collections:
+  - name: "monitors"
+    label: "Monitors"
+    folder: "src/content/monitors"
+    create: true
+    fields:
+      - {label: "Type", name: "type", widget: "string"}
+      - {label: "Fault", name: "fault", widget: "string"}
+      - {label: "Price", name: "price", widget: "string"}
+
+  - name: "printers"
+    label: "Printers"
+    folder: "src/content/printers"
+    create: true
+    fields:
+      - {label: "Type", name: "type", widget: "string"}
+      - {label: "Fault", name: "fault", widget: "string"}
+      - {label: "Price", name: "price", widget: "string"}
+
+  - name: "tv"
+    label: "TV"
+    folder: "src/content/tv"
+    create: true
+    fields:
+      - {label: "Type", name: "type", widget: "string"}
+      - {label: "Fault", name: "fault", widget: "string"}
+      - {label: "Price", name: "price", widget: "string"}
